@@ -2,12 +2,29 @@
     font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header {
+header div.logo-banner {
     height: 5rem;
     padding: 0.5rem;
     background-color: #2B497F;
+}
+
+nav {
+    min-height: 3rem;
+    background-color: #fff;
     position: sticky;
     top: 0;
+}
+
+nav ul {
+    display: none;
+}
+
+button.nav-toggle-button {
+    box-sizing: border-box;
+    height: 3rem;
+    aspect-ratio: 1 / 1;
+    border: none;
+    background-color: inherit;
 }
 
 img {
@@ -42,7 +59,7 @@ h3 {
 p,
 strong,
 em {
-    font: 1.2rem/1.35 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 1rem/1.35 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 strong {
