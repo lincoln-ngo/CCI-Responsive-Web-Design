@@ -15,31 +15,64 @@
 
     <!--Link to retrieve Font Awesome icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="script.js" type="module"></script>
 </head>
 
 <body>
     <header>
         <div class="logo-banner">
-            <img src="images/logo-black-no-padding-no-logo.svg">
+            <img class="logo" src="images/logo-black-no-padding-no-logo.svg">
         </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Treatment</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Training</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">News</a></li>
-        </ul>
         <button class="nav-toggle-button" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span>
         </button>
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="fa fa-home nav-icon"></span>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-plus"></span>
+                    About Us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-plus"></span>
+                    Treatment
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-plus"></span>
+                    Research
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-plus"></span>
+                    Training
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa fa-plus"></span>
+                    Resources
+                </a>
+            </li>
+            <li><a href="#" class="nav-no-icon">News</a></li>
+        </ul>
     </nav>
     <main>
         <div class="title-banner">
             <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="#">Looking After Yourself</a></li>
                 <li><a href="#">Tolerating Distress</a></li>

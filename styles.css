@@ -1,43 +1,26 @@
+/*==========================================
+GENERAL STYLES
+==========================================*/
+
+html {
+box-sizing: border-box;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
 * {
     font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header div.logo-banner {
-    height: 5rem;
-    padding: 0.5rem;
-    background-color: #2B497F;
-}
-
-nav {
-    min-height: 3rem;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
-}
-
-nav ul {
-    display: none;
-}
-
-button.nav-toggle-button {
-    box-sizing: border-box;
-    height: 3rem;
-    aspect-ratio: 1 / 1;
-    border: none;
-    background-color: inherit;
-}
-
-img {
-    height: 100%;
-    width: auto;
-    filter: invert(100%);
+body {
+    margin: 0;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-family: 'Open Sans', 'Segoe UI Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     -webkit-margin-after: 0.5em;
     line-height: normal;
@@ -59,7 +42,8 @@ h3 {
 p,
 strong,
 em {
-    font: 1rem/1.35 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.35;
 }
 
 strong {
@@ -70,9 +54,106 @@ em {
     font-style: italic;
 }
 
-body {
-    margin: 0;
+/*==========================================
+ HEADER STYLES
+ ==========================================*/
+
+.logo {
+    height: 100%;
+    width: auto;
+    filter: invert(100%) brightness(300%) contrast(300%);
 }
+
+header div.logo-banner {
+    height: 5.4rem;
+    padding: 0.5rem;
+    background-color: #2B497F;
+}
+
+/*==========================================
+NAVIGATION STYLES
+==========================================*/
+
+nav {
+    min-height: 3.5rem;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+/* Hide the navigation menu by default on small screens */
+nav ul {
+    display: none;
+}
+
+/* Show the navigation menu when it has the 'active' class */
+
+button.nav-toggle-button {
+    box-sizing: border-box;
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    background-color: inherit;
+    font-size: 1.25rem;
+}   
+
+button.nav-toggle-button:hover,
+button.nav-toggle-button:focus-visible {
+    color: #888;
+    background-color: #f6f6f6;        
+}
+
+nav ul.active {
+    display: block;
+    font-size: 0.9rem;
+    list-style: none;
+    background-color: #2B497F;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    height: 2.5rem;
+    border-top: 1px solid white;
+}
+
+nav li:hover {
+    background-color: #BDD0F1;
+    color: #2B497F;
+}
+
+nav li:hover *,
+nav li:hover a .fa {
+    color: inherit;
+}
+
+nav li:last-child {
+    border-bottom: 1px solid white;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 2.5rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+nav li a .fa {
+    margin: 0 0.5rem;
+    color: #BDD0F1;
+}
+
+nav li a.nav-no-icon {
+    padding-left: 2.9rem;
+}
+
+/*==========================================
+MAIN CONTENT STYLES
+==========================================*/
 
 .title-banner {
     background-color: #BDD0F1;
@@ -89,6 +170,7 @@ body {
 ul.breadcrumb {
     list-style: none;
     padding-left: 0;
+    font-size: 0.9rem;
 }
 
 ul.breadcrumb li {
@@ -116,15 +198,4 @@ ul.breadcrumb li a:focus {
     width: 90%;
     margin: 0 auto;
     max-width: 1000px;
-}
-
-/** Open Sans font CSS **/
-
-.open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
