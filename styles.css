@@ -187,10 +187,22 @@ nav ul.child-navigation-list {
     color: white;
 }
 
+nav ul.child-navigation-list li:hover,
+nav ul.child-navigation-list li:focus-within {
+    background-color: #2B497F;
+}
+
 nav ul.child-navigation-list li>a {
     font-weight: normal;
     line-height: 1.75rem;
     height: 1.75rem;
+    display: revert;
+}
+
+nav ul.child-navigation-list li>a:hover,
+nav ul.child-navigation-list li>a:focus {
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 
