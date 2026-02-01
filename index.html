@@ -29,42 +29,76 @@
         <button class="nav-toggle-button" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span>
         </button>
-        <ul>
+        <ul class="parent-navigation-list">
             <li>
                 <a href="#">
                     <span class="fa fa-home nav-icon"></span>
                     Home
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li class="contains-child-navigation-list">
+                <button>
                     <span class="fa fa-plus"></span>
-                    About Us
-                </a>
+                    <span class="nav-label">About Us</span>
+                </button>
+                <ul class="child-navigation-list">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Staff Profiles</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
             </li>
-            <li>
-                <a href="#">
+            <li class="contains-child-navigation-list">
+                <button>
                     <span class="fa fa-plus"></span>
-                    Treatment
-                </a>
+                    <span class="nav-label">Treatment</span>
+                </button>
+                <ul class="child-navigation-list">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Mood Management Course</a></li>
+                    <li><a href="#">Bipolar Course</a></li>
+                    <li><a href="#">Social Anxiety Course</a></li>
+                    <li><a href="#">Worry and Rumination Course</a></li>
+                    <li><a href="#">Panic Disorder Course</a></li>
+                    <li><a href="#">Eating Disorders Program</a></li>
+                    <li><a href="#">Individual Treatment</a></li>
+                    <li><a href="#">Referrals</a></li>
+                    <li><a href="#">Program Brochures</a></li>
+                </ul>
             </li>
-            <li>
-                <a href="#">
+            <li class="contains-child-navigation-list">
+                <button>
                     <span class="fa fa-plus"></span>
-                    Research
-                </a>
+                    <span class="nav-label">Research</span>
+                </button>
+                <ul class="child-navigation-list">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Publications</a></li>
+                </ul>
             </li>
-            <li>
-                <a href="#">
+            <li class="contains-child-navigation-list">
+                <button>
                     <span class="fa fa-plus"></span>
-                    Training
-                </a>
+                    <span class="nav-label">Training</span>
+                </button>
+                <ul class="child-navigation-list">
+                    <li><a href="#">Training Calendar</a></li>
+                    <li><a href="#">Workshop Descriptions</a></li>
+                    <li><a href="#">Register for Training</a></li>
+                    <li><a href="#">Demonstration Videos</a></li>
+                </ul>
             </li>
-            <li>
-                <a href="#">
+            <li class="contains-child-navigation-list">
+                <button>
                     <span class="fa fa-plus"></span>
-                    Resources
-                </a>
+                    <span class="nav-label">Resources</span>
+                </button>
+                <ul class="child-navigation-list">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Looking After Yourself</a></li>
+                    <li><a href="#">Looking After Others</a></li>
+                    <li><a href="#">For Clinicians</a></li>
+                </ul>
             </li>
             <li><a href="#" class="nav-no-icon">News</a></li>
         </ul>

@@ -74,6 +74,7 @@ header div.logo-banner {
 NAVIGATION STYLES
 ==========================================*/
 
+/* Minimum height allows space for the toggle button even when no menu items are shown */
 nav {
     min-height: 3.5rem;
     background-color: #fff;
@@ -82,11 +83,19 @@ nav {
 }
 
 /* Hide the navigation menu by default on small screens */
-nav ul {
+nav ul.parent-navigation-list {
     display: none;
 }
 
 /* Show the navigation menu when it has the 'active' class */
+nav ul.parent-navigation-list.active {
+    display: block;
+    font-size: 0.9rem;
+    list-style: none;
+    background-color: #2B497F;
+    margin: 0;
+    padding: 0;
+}
 
 button.nav-toggle-button {
     box-sizing: border-box;
@@ -103,53 +112,82 @@ button.nav-toggle-button:focus-visible {
     background-color: #f6f6f6;        
 }
 
-nav ul.active {
-    display: block;
-    font-size: 0.9rem;
-    list-style: none;
-    background-color: #2B497F;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    height: 2.5rem;
+nav ul.parent-navigation-list>li {
+    min-height: 2.5rem;
     border-top: 1px solid white;
 }
 
-nav li:hover {
+nav ul.parent-navigation-list>li:last-child {
+    border-bottom: 1px solid white;
+}
+
+nav li:hover,
+nav li:focus-within {
     background-color: #BDD0F1;
     color: #2B497F;
 }
 
 nav li:hover *,
-nav li:hover a .fa {
+nav li:focus-within *,
+nav li:hover .fa,
+nav li:focus-within .fa {
     color: inherit;
 }
 
-nav li:last-child {
-    border-bottom: 1px solid white;
-}
-
-nav li a {
+nav li>a,
+nav li>button {
     color: #fff;
-    text-decoration: none;
-    line-height: 2.5rem;
+    background-color: inherit;
     font-weight: bold;
-    padding-left: 1rem;
-    display: block;
+    text-decoration: none;
     width: 100%;
-    height: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 0 0 1rem;
 }
 
-nav li a .fa {
+nav li>a {
+    display: block;
+}
+
+nav li>button {
+    border: none;
+    text-align: left;
+    font-size: inherit;
+    padding: 0 0 0 1rem;
+}
+
+nav li>button:hover {
+    cursor: pointer;
+}
+
+nav li .fa {
     margin: 0 0.5rem;
     color: #BDD0F1;
 }
 
+/* Special padding setting for navigation list items with no icons
+This setting allows the text to align with other items that do have icons */
 nav li a.nav-no-icon {
     padding-left: 2.9rem;
 }
+
+nav ul.child-navigation-list {
+    display: none;
+}
+
+nav li.contains-child-navigation-list.active ul.child-navigation-list {
+    display: block;
+}
+
+nav ul.child-navigation-list {
+    list-style: none;
+}
+
+nav ul.child-navigation-list li>a {
+    font-weight: normal;
+}
+
 
 /*==========================================
 MAIN CONTENT STYLES
