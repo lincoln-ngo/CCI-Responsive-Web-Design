@@ -2,7 +2,10 @@
 
 function showParentNavigationMenu() {
     const navMenu = document.querySelector("nav ul.parent-navigation-list");
+    const icon = document.querySelector(".nav-toggle-button span.fa");
     navMenu.classList.toggle("active");
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-times");
 }
 
 const navToggleButton = document.querySelector(".nav-toggle-button");
