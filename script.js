@@ -11,6 +11,17 @@ function showParentNavigationMenu() {
 const navToggleButton = document.querySelector(".nav-toggle-button");
 navToggleButton.addEventListener("click", showParentNavigationMenu);
 
+document.addEventListener("keydown", (e) => {
+    const navMenu = document.querySelector("nav ul.parent-navigation-list");
+    if (e.key === "Escape" && navMenu.classList.contains("active")) {
+        const icon = document.querySelector(".nav-toggle-button span.fa");
+        const navToggleButton = document.querySelector(".nav-toggle-button");
+        navMenu.classList.remove("active");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-times");
+        navToggleButton.focus();
+    }
+})
 
 // Code that controls the subnavigation toggles
 
