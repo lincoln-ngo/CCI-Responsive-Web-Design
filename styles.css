@@ -284,7 +284,6 @@ ul.breadcrumb li a:focus {
 /** Styling for the figure of the distress puddle **/
 
 .puddle-figure {
-    min-width: 250px;
     max-width: 450px;
     display: flex;
     flex-flow: column;
@@ -320,7 +319,7 @@ ul.breadcrumb li a:focus {
 .example-distress-log {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 90vw), 1fr));
 }
 
 .example-distress-log dt {
