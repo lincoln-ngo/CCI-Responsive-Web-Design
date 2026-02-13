@@ -281,6 +281,8 @@ ul.breadcrumb li a:focus {
     max-width: 1000px;
 }
 
+/** Styling for the figure of the distress puddle **/
+
 .puddle-figure {
     min-width: 250px;
     max-width: 450px;
@@ -311,6 +313,35 @@ ul.breadcrumb li a:focus {
 .outermost-puddle {
     display: flex;
     flex-flow: column;
+}
+
+/* Styling for the workbook example of a distress log/diary */ 
+
+.example-distress-log {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.example-distress-log dt {
+    font-weight: bold;
+}
+
+.example-distress-log dd {
+    margin-bottom: 1rem;
+}
+
+.example-distress-log span.fine-print {
+    display: block;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.example-distress-log article {
+    border: 2px solid #2B497F;
+    border-radius: 0.5rem;
+    background-color: #E9F0FF;
+    padding: 0.5rem 1rem;
 }
 
 
