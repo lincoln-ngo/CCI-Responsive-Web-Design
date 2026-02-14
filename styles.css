@@ -101,6 +101,7 @@ nav.website-navigation {
     background-color: #fff;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 /* Hide the navigation menu by default on small screens */
@@ -400,13 +401,13 @@ FIGURE AND DIAGRAM STYLES
     flex-flow: column;
     justify-content: space-between;
     position: absolute;
+    z-index: -1;
     top: 0;
-    left: 27.5%;
-    width: 70%;
+    left: calc(20% + 4px);
 }
 
 .continuum-label {
-    margin: 0;
+    margin: 0 0 0 1.5rem;
 }
 
 /*==========================================
