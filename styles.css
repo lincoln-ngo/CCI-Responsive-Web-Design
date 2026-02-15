@@ -63,6 +63,10 @@ em {
     font-style: italic;
 }
 
+ul {
+    list-style: square;
+}
+
 figcaption {
     font-style: italic;
     font-size: 0.9rem;
@@ -241,10 +245,6 @@ MAIN CONTENT STYLES
     margin-top: 0;
 }
 
-.body-text-list {
-    list-style: square;
-}
-
 .body-text-list li {
     margin: 0.75rem 0;
 }
@@ -408,6 +408,10 @@ FIGURE AND DIAGRAM STYLES
 
 .continuum-label {
     margin: 0 0 0 1.5rem;
+}
+
+.distress-tolerance-continuum figcaption {
+    margin-top: 2rem;
 }
 
 /*==========================================
