@@ -80,6 +80,14 @@ figcaption {
 }
 
 /*==========================================
+ UTILITY CLASSES
+ ==========================================*/
+
+ .bold {
+    font-weight: bold;
+}
+
+/*==========================================
  HEADER STYLES
  ==========================================*/
 
@@ -293,7 +301,7 @@ ul.breadcrumb li a:focus {
 FIGURE AND DIAGRAM STYLES
 ==========================================*/
 
-/** Styling for the figure of the distress puddle **/
+/** Distress puddle **/
 
 .puddle-figure {
     max-width: 450px;
@@ -326,7 +334,7 @@ FIGURE AND DIAGRAM STYLES
     flex-flow: column;
 }
 
-/* Styling for the workbook example of a distress log/diary */
+/* Distress log/diary */
 
 .example-distress-log {
     display: grid;
@@ -356,7 +364,7 @@ FIGURE AND DIAGRAM STYLES
     padding: 0.5rem 1rem;
 }
 
-/** Styling for distress tolerance continuum diagram **/
+/** Distress tolerance continuum **/
 .distress-tolerance-continuum {
     margin: 3rem 0;
     position: relative;
@@ -412,6 +420,73 @@ FIGURE AND DIAGRAM STYLES
 
 .distress-tolerance-continuum figcaption {
     margin-top: 2rem;
+}
+
+/** Distress Intolerance Model **/
+.distress-intolerance-model {
+    display: flex;
+    flex-flow: column;
+    row-gap: 0.5rem;
+    margin: 2.5rem;
+}
+
+.distress-intolerance-model figcaption {
+    font-size: 1.1rem;
+    text-align: center;
+    font-style: normal;
+}
+
+.distress-intolerance-model h4 {
+    margin: 0;
+}
+
+.distress-intolerance-model section {
+    border: 2px solid #2B497F;
+    border-radius: 0.5rem;
+    background-color: #E9F0FF;
+    padding: 0.5rem 1rem;
+}
+
+
+.distress-intolerance-model .examples {
+    font-style: italic;
+    font-size: 0.9rem;
+
+    /* The margin-bottom is set to 4rem so that blank space appears in the flow chart box,
+    signifying that the reader should "write" their own answers in the blank space */
+    margin: 0 0 4rem;
+}
+
+.distress-intolerance-model .fa {
+    width: 100%;
+}
+
+.distress-intolerance-model .fa-long-arrow-down {
+    font-size: 2rem;
+}
+
+.distress-intolerance-model .fa-plus {
+    font-size: 1.5rem;
+}
+
+.distress-intolerance-model h4,
+.distress-intolerance-model .examples,
+.distress-intolerance-model div,
+.distress-intolerance-model .repeat-cycle {
+    text-align: center;
+}
+
+.distress-intolerance-model p:not(.examples):last-child {
+    margin-bottom: 1rem;
+}
+
+.distress-intolerance-model p .fa-repeat {
+    display: inline;
+    font-size: 2rem;
+}
+
+.distress-intolerance-model p .fa-repeat::after {
+    content: " ";
 }
 
 /*==========================================
