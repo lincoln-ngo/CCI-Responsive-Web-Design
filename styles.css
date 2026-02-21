@@ -569,16 +569,41 @@ SECTION NAVIGATION STYLES
     font-weight: 600;
 }
 
+/*==========================================
+ABOUT SECTION STYLES
+==========================================*/
 
+.about {
+    border: 1px solid #AAC0E8;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #E9F0FF;
+    margin: 2.5rem auto;
+    color: #303030;
+}
 
+.about h3 {
+    margin: 1rem 0;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: inherit;
+}
+
+.about li p {
+    margin: 0;
+}
+
+.about li {
+    margin-bottom: 1.5rem;
+}
 
 /*==========================================
 FOOTER STYLES
 ==========================================*/
 
-footer p,
-footer address,
-footer dl {
+.site-wide-footer p,
+.site-wide-footer address,
+.site-wide-footer dl {
     font-size: 0.9rem;
 }
 
